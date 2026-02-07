@@ -1,0 +1,7 @@
+so then the dspy internally writes the prompt you mean by?
+
+Yes, DSPy constructs the final text string that is sent to the LLM. It's not magic—it's essentially a sophisticated 
+template-filling system that uses data to decide what to fill in.
+
+Yes, DSPy generates different prompts for each model using model-specific adapters and model-aware optimization. 
+Your signature stays identical, but the actual text sent to OpenAI vs DeepSeek looks completely different.

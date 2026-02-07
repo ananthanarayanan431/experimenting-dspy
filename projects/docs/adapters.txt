@@ -1,0 +1,9 @@
+What are Adapters?¶
+Adapters are the bridge between dspy.Predict and the actual Language Model (LM). When you call a DSPy module, the adapter takes your signature, user inputs, and other attributes like demos (few-shot examples) and converts them into multi-turn messages that get sent to the LM.
+
+The adapter system is responsible for:
+
+Translating DSPy signatures into system messages that define the task and request/response structure.
+Formatting input data according to the request structure outlined in DSPy signatures.
+Parsing LM responses back into structured DSPy outputs, such as dspy.Prediction instances.
+Managing conversation history and function calls.
